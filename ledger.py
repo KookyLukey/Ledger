@@ -21,6 +21,8 @@ def startup():
 
     if menuDecision == "1":
         addExpense()
+    elif menuDecision == "2":
+        removeExpense()
     elif menuDecision == "3":
         print float(getIncome()) - float(getTotalExpenses())
     elif menuDecision == "4":

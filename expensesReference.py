@@ -46,3 +46,10 @@ def getTotalExpenses():
         total += float(val)
 
     return total
+
+def removeExpense():
+    toBeDel = raw_input('Enter description of the expense you want to remove: ')
+    expenses = loadExpenses()
+
+    del expenses[toBeDel]
+    saveExpenses(expenses)
