@@ -3,9 +3,7 @@ import pickle
 
 def setIncome():
     amount = raw_input('Enter monthly income: ')
-
-    #load saved dict
-    totalIncome = loadIncome()
+    totalIncome = {}
 
     #add to loaded dict and run saveExpenses
     totalIncome["Income"] = amount
